@@ -19,10 +19,10 @@ $options = [
 try {
     $pdo = new PDO($dsn, $username, $password, $options);
     // Connexion réussie
-    echo "Connexion réussie à la base de données";
+    // echo "Connexion réussie à la base de données";
 } catch (PDOException $e) {
     // En cas d'erreur de connexion
-    echo "Erreur de connexion : " . $e->getMessage();
+    // echo "Erreur de connexion : " . $e->getMessage();
 }
 // séléction de la base de donnée de tout les joueurs de la table
 $requete = "SELECT * FROM players_of_tennis";
