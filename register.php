@@ -33,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>log-in</title>
+    <link href="./top.css" rel="stylesheet">
 </head>
 <body>
 <form action="ad_account.php" method="post">
@@ -47,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <br>
         <button type="submit">S'inscrire</button>
 </form>
-<a href="./login.php">Vous avez déjà un compte ? </a>
-<a href="./top.php">Retour au menu princpal</a>
+<a href="./login.php">Vous avez déjà un compte ? </a><br>
+<a href="./top.php">Retour au menu principal</a>
 </body>
 </html>

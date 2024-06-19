@@ -5,8 +5,15 @@ table{
     border-collapse: collapse;
 }
 html{
-    background-image: url('https://www.so-tennis.fr/wp-content/uploads/2021/05/Coupe-des-Mousquetaires-mars-2018.jpg'); 
-    background-size: auto;
-    background-position: auto;
-    background-color: aquamarine;
+    background: 
+    linear-gradient(
+        217deg,
+        rgba(255, 0, 0, 0.8),
+        rgba(255, 0, 0, 0) 70.71%
+      ),
+      linear-gradient(127deg, rgb(50, 144, 216), rgba(11, 214, 8, 0.722) 70.71%),
+      linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  }
+.lien{
+    color: rgb(255, 0, 0); 
 } 

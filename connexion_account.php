@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Vous avez été connecté</title>
+    <link href="./top.css" rel="stylesheet">
   </head>
   <body>
     <p>

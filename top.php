@@ -20,6 +20,10 @@ include("connexion.php");
 </head>
 
 <body>
+<div class="lien">
+<a href="./register.php">S'inscrire</a><br>
+<a href="./login.php">Se connecter</a>
+</div>
     <table cellpadding="5" cellspacing="5">
         <tr>
             <td>Prenom</td>
@@ -46,8 +50,7 @@ include("connexion.php");
         </p>
         <button type="submit" name="submit">Envoyer</button>
     </form>
-<a href="./register.php">S'inscrire</a>
-<a href="./login.php">Se connecter</a>
+
 </body>
 
 </html>

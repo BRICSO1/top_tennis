@@ -28,6 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Connexion</title>
+    <link href="./top.css" rel="stylesheet">
 </head>
 <body>
     <form action="connexion_account.php" method="post">
@@ -39,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <br>
         <button type="submit">Se connecter</button>
     </form>
-    <a href="./register.php">Vous n'avez pas de compte ? Créez en un ici !</a>
-    <a href="./top.php">Retour au menu principl</a>
+    <a href="./register.php">Vous n'avez pas de compte ? Créez en un ici !</a><br>
+    <a href="./top.php">Retour au menu principal</a>
 </body>
 </html>
