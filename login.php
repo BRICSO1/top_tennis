@@ -1,4 +1,8 @@
 <?php
+$dsn = 'mysql:host=localhost';'dbname=user';
+$username = 'root';
+$password = '';
+
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -36,5 +40,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button type="submit">Se connecter</button>
     </form>
     <a href="./register.php">Vous n'avez pas de compte ? Créez en un ici !</a>
+    <a href="./top.php">Retour au menu principl</a>
 </body>
 </html>

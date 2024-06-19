@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
     // Ajout du commentaire dans le fichier
     if (file_put_contents($commentaire . PHP_EOL, FILE_APPEND | LOCK_EX) !== false) {
         // Redirection vers top.php après ajout du commentaire
-        header('Location: save_comment.php');
+        header('Location: top.php');
         exit(); // Assure que le script s'arrête après la redirection
     }
 }

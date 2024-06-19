@@ -3,6 +3,13 @@ include("connexion.php");
 /**
  * Ce scrpt ajoute les joueurs lorsque qu'on crée un base de donnés 
  */
+$table="CREATE TABLE players (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Firstname VARCHAR(50) NOT NULL,
+    lastname VARCHAR(255) NOT NULL,
+    points int (100) NOT NULL,
+    nationality VARCHAR(255) NOT NULL,
+);"
 $players = [
     ["Prenom" => "Jannik", "Nom" => "Sinner", "Nationalite" => "Italien", "Points" => 9525],
     ["Prenom" => "Carlos", "Nom" => "Alcaraz", "Nationalite" => "Espagnol", "Points" => 8560],

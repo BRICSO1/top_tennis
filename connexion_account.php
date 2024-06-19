@@ -7,6 +7,6 @@
     <p>
       c'est bon vous avez été connnecté !
     </p>
-    <a href="./top.php">retour au menu principale</a>
+    <a href="./top.php">retour au menu principal</a>
   </body>
 </html>

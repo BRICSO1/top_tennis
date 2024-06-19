@@ -46,10 +46,8 @@ include("connexion.php");
         </p>
         <button type="submit" name="submit">Envoyer</button>
     </form>
-<a href="./register.php">Se connecter</a>
-    <!-- Bouton de réinitialisation du formulaire -->
-    <button type="reset">Réinitialiser</button>
-
+<a href="./register.php">S'inscrire</a>
+<a href="./login.php">Se connecter</a>
 </body>
 
 </html>

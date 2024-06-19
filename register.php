@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>log-in</title>
 </head>
 <body>
-<form action="connexion_account.php" method="post">
+<form action="ad_account.php" method="post">
         <label for="username">Nom d'utilisateur :</label>
         <input type="text" id="username" name="username" required>
         <br>
@@ -48,5 +48,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button type="submit">S'inscrire</button>
 </form>
 <a href="./login.php">Vous avez déjà un compte ? </a>
+<a href="./top.php">Retour au menu princpal</a>
 </body>
 </html>
