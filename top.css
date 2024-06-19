@@ -1,0 +1,12 @@
+td{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+}
+html{
+    /* background-image: url('https://www.so-tennis.fr/wp-content/uploads/2021/05/Coupe-des-Mousquetaires-mars-2018.jpg'); 
+    background-size: auto;
+    background-position: auto; */
+    background-color: aquamarine;
+} 
