@@ -5,7 +5,7 @@ $aleatoire = array_rand($favoriteplayer);
 $aleatoire2 = $favoriteplayer[$aleatoire];
 
 
-include("connextion.php");
+include("connexion.php");
 
 // Variable $file est définie dans save_comment.php
 

@@ -1,5 +1,5 @@
 <?php
-include("connextion.php");
+include("connexion.php");
 /**
  * Ce scrpt ajoute les joueurs lorsque qu'on crée un base de donnés 
  */
