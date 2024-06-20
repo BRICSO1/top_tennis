@@ -1,4 +1,5 @@
 <?php
+// Paramètres de configuration
 $charset = 'utf8mb4';
 $host = 'localhost'; // Adresse du serveur MySQL
 $dbname = 'tennis_website'; // Nom de la base de données
