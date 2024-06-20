@@ -7,7 +7,7 @@ $username = 'root'; // Nom d'utilisateur MySQL
 $password = ''; // Mot de passe MySQL
 
 // DSN (Data Source Name)
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
 
 // Options PDO
 $options = [
@@ -18,8 +18,12 @@ $options = [
 
 try {
     // Créer une nouvelle instance de PDO
-    $pdo = new PDO($dsn, $user, $pass, $options);
-    echo "Connexion réussie !";}yyyyy
+    $pdo = new PDO($dsn, $username, $password, $options);
+    echo "Connexion réussie !";
+} catch (PDOException $e) {
+    // Gérer les erreurs de connexion
+    echo "Erreur de connexion : " . $e->getMessage();
+}
 $requete = "SELECT * FROM players_of_tennis";
 $statement = $pdo->prepare($requete);
 $statement->execute();
