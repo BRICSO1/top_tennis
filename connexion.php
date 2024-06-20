@@ -1,11 +1,9 @@
 <?php
-/<?php
-// Paramètres de configuration
-$host = '127.0.0.1';
-$db   = 'nom_de_la_base_de_donnees';
-$user = 'nom_utilisateur';
-$pass = 'mot_de_passe';
 $charset = 'utf8mb4';
+$host = 'localhost'; // Adresse du serveur MySQL
+$dbname = 'tennis_website'; // Nom de la base de données
+$username = 'root'; // Nom d'utilisateur MySQL
+$password = ''; // Mot de passe MySQL
 
 // DSN (Data Source Name)
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
