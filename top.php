@@ -40,8 +40,8 @@ include("connexion.php");
             </tr>
         <?php endforeach; ?>
     </table>
-    <p>Mon joueur favori est : <?php echo $aleatoire2 ?></p>
-
+    <p>Mon joueur favori est : <?php echo $aleatoire2 ?><br><br> Vous pensez qu'il manque un joueur ?</p>
+    <a href="./ad_player_user.php"> Ajoutez-le !</a>
     <!-- Formulaire pour enregistrer un commentaire -->
     <form action="save_comment.php" method="post">
         <p>
