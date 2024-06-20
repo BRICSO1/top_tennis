@@ -1,5 +1,4 @@
 <?php
-// Paramètres de connexion à la base de données
 $host = 'localhost'; // Adresse du serveur MySQL
 $dbname = 'tennis_website'; // Nom de la base de données
 $username = 'root'; // Nom d'utilisateur MySQL
