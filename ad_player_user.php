@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajouter un joueur de tennis</title>
+    <link href="./top.css" rel="stylesheet">
 </head>
 <body>
     <h2>Ajouter un joueur de tennis</h2>

@@ -19,10 +19,10 @@ $options = [
 try {
     // Créer une nouvelle instance de PDO
     $pdo = new PDO($dsn, $username, $password, $options);
-    echo "Connexion réussie !";
+    // echo "Connexion réussie !";
 } catch (PDOException $e) {
     // Gérer les erreurs de connexion
-    echo "Erreur de connexion : " . $e->getMessage();
+    // echo "Erreur de connexion : " . $e->getMessage();
 }
 $requete = "SELECT * FROM players_of_tennis";
 $statement = $pdo->prepare($requete);
