@@ -1,17 +1,10 @@
-<?php
-if (isset($_POST['submit'])) {
-    // Récupération du commentaire
-    $commentaire = $_POST['login'];
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vous avez été connecté</title>
+</head>
+<body>
     
-    // Ajout du commentaire dans le fichier
-    if (file_put_contents($commentaire . PHP_EOL, FILE_APPEND | LOCK_EX) !== false) {
-        // Redirection vers top.php après ajout du commentaire
-        header('Location: top.php');
-        exit(); // Assure que le script s'arrête après la redirection
-    }
-}
-else {
-    header('Location: top.php');
-    exit();
-}
-?>
+</body>
+</html>

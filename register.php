@@ -1,15 +1,5 @@
 <?php
-// Connexion à la base de données (utilisation de PDO)
-$dsn = 'mysql:host=localhost';'dbname=user';
-$username = 'root';
-$password = '';
-
-try {
-    $pdo = new PDO($dsn, $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die('Erreur de connexion : ' . $e->getMessage());
-}
+include("./connexion.php");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
@@ -36,7 +26,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link href="./top.css" rel="stylesheet">
 </head>
 <body>
-<form action="ad_account.php" method="post">
+    <h2>S'inscrire</h2>
+<form action="save_account.php" method="post">
         <label for="username">Nom d'utilisateur :</label>
         <input type="text" id="username" name="username" required>
         <br>

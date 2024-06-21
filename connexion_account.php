@@ -1,8 +1,5 @@
 <?php
-$dsn = 'mysql:host=localhost';'dbname=user';
-$username = 'root';
-$password = '';
-
+include("./connexion.php");
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -33,7 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
   ?>
     </p>
-    <a href="./top.php">retour au menu principal</a>
+    <a href="./top.php">Retour au menu principal</a>
+    <a href="./login.php">Réessayer</a>
   </body>
 </html>
   <?php
