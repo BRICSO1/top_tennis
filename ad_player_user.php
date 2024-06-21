@@ -23,5 +23,6 @@
         
         <input type="submit" value="Ajouter le joueur">
     </form>
+    <a href="./top.php">Retour au menu principal</a>
 </body>
 </html>
