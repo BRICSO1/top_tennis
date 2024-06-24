@@ -6,8 +6,17 @@ $aleatoire2 = $favoriteplayer[$aleatoire];
 
 
 include("connexion.php");
+// $user_id = $_SESSION['user_id'];
+// $sql = 'SELECT username, email, created_at FROM users WHERE id = :id';
+// $stmt = $pdo->prepare($sql);
+// $stmt->execute(['id' => $user_id]);
+// $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-// Variable $file est définie dans save_comment.php
+// if (!$user) {
+//     echo 'Utilisateur non trouvé.';
+//     exit;
+// }
+
 
 ?>
 
@@ -50,6 +59,9 @@ include("connexion.php");
         </p>
         <button type="submit" name="submit">Envoyer</button>
     </form>
+
+    <!-- <h4>Bienvenue, <?php echo htmlspecialchars($user['username']); ?> !</h4>
+    <p>Email : <?php echo htmlspecialchars($user['email']); ?></p> -->
 <footer>
         <p>Mes résaux :</p><a href="https://github.com/BRICSO1">Github</a>  <a href="https://discord.com/channels/1207714141889106051/1207714142337761363">Discord</a>
 </footer>
