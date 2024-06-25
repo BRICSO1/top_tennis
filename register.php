@@ -1,22 +1,3 @@
-<?php
-include("./connexion.php");
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-
-    $sql = 'INSERT INTO users (username, email, password) VALUES (:username, :email, :password)';
-    $stmt = $pdo->prepare($sql);
-    
-    try {
-        $stmt->execute(['username' => $username, 'email' => $email, 'password' => $password]);
-        echo 'Inscription réussie !';
-    } catch (PDOException $e) {
-        echo 'Erreur : ' . $e->getMessage();
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <h2>S'inscrire</h2>
-<form action="save_account.php" method="post">
+<form action="./auth/save_account.php" method="post">
         <label for="username">Nom d'utilisateur :</label>
         <input type="text" id="username" name="username" required>
         <br>
