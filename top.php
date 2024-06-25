@@ -63,7 +63,8 @@ include("connexion.php");
 
     <!-- <h4>Bienvenue, <?php echo htmlspecialchars($user['username']); ?> !</h4>
     <p>Email : <?php echo htmlspecialchars($user['email']); ?></p> -->
-<footer>
+<br><br><br><br><br><br><br><br><br>
+    <footer>
         <p>Mes résaux :</p><a href="https://github.com/BRICSO1">Github</a>  <a href="https://discord.com/channels/1207714141889106051/1207714142337761363">Discord</a>
 </footer>
 </body>
