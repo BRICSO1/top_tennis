@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
     $commentaire = htmlspecialchars($_POST['commentaire'], ENT_QUOTES, 'UTF-8'); // Sanitize input
 
     // Définition du fichier dans lequel les commentaires seront sauvegardés
-    $file = 'commentiares.txt'; // Replace with your file path
+    $file = 'commentaires.txt'; // Replace with your file path
 
     // Ajout du commentaire dans le fichier
     if (file_put_contents($file, $commentaire . PHP_EOL, FILE_APPEND | LOCK_EX) !== false) {

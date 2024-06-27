@@ -70,8 +70,6 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `created_at`) VALUES
-(0, 'Bricso1', 'azerty', 'bricos1@exemple.uk', '0000-00-00 00:00:00'),
-(5, 'arthur', '$2y$10$qz5V2psul20k4MToD4HCCOJHC7sjj5ca0Z4eZJI1/eppsbheXi.ei', 'are@gjk.y', '2024-06-26 09:32:12');
 
 --
 -- Index pour les tables déchargées
