@@ -24,11 +24,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->execute(['username' => $username, 'email' => $email, 'password' => $password]);
             echo 'Inscription réussie !';
         } catch (PDOException $e) {
-            echo 'Erreur : ' . $e->getMessage() ?> <a href="./register.php">réesayer</a><?php;
-                                                                                }
-                                                                            }
-                                                                                    ?>
-    <a href="./top.php">retour au menu princpal</a>
+            echo 'Erreur : ' . $e->getMessage() ?> <a href="../register.php">réesayer</a><?php
+        }
+}
+?>
+    <a href="../top.php">retour au menu princpal</a>
     </body>
 
     </html>

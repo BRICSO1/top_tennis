@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2>S'inscrire</h2>
-<form action="./auth/save_account.php" method="post">
+<form action="./save_account.php" method="post">
         <label for="username">Nom d'utilisateur :</label>
         <input type="text" id="username" name="username" required>
         <br>

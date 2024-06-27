@@ -1,20 +1,23 @@
 <?php
+include("./protect.php");
+
 if (isset($_POST['submit'])) {
-    // Récupération du login
-    $commentaire = $_POST['commentaire'];
-    
+    // Récupération du commentaire
+    $commentaire = htmlspecialchars($_POST['commentaire'], ENT_QUOTES, 'UTF-8'); // Sanitize input
+
+    // Définition du fichier dans lequel les commentaires seront sauvegardés
+    $file = 'commentiares.txt'; // Replace with your file path
+
     // Ajout du commentaire dans le fichier
     if (file_put_contents($file, $commentaire . PHP_EOL, FILE_APPEND | LOCK_EX) !== false) {
         // Redirection vers save_comment.php après ajout du commentaire
-        header('Location: save_comment.php');
-        exit(); // Assure que le script s'arrête après la redirection
+        echo("c'est bon votre commantaire a été enrgitré");
     } else {
         // Gestion d'une erreur d'écriture dans le fichier
         echo "<p>Erreur lors de l'ajout du commentaire.</p>";
     }
-}
-else {
-    header('Location: save_comment.php');
+} else {
+    header('Location: top.php');
     exit();
 }
 ?>
@@ -25,7 +28,6 @@ else {
     <title>Document</title>
 </head>
 <body>
-<p>C'est bon vous êtes connecté</p>
-<a href="./top.php">retour à l'acceuil</a>
+<a href="./top.php">Retour à l'accueil</a>
 </body>
 </html>

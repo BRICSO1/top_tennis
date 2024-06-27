@@ -1,5 +1,5 @@
 <?php
-include("protect.php")
+include("protect.php");
 include("connexion.php");
 /**
  * Ce scrpt ajoute les joueurs lorsque qu'on crée un base de donnés 
@@ -10,7 +10,7 @@ $table="CREATE TABLE players (
     lastname VARCHAR(255) NOT NULL,
     points int (100) NOT NULL,
     nationality VARCHAR(255) NOT NULL,
-);"
+);";
 $players = [
     ["Prenom" => "Jannik", "Nom" => "Sinner", "Nationalite" => "Italien", "Points" => 9525],
     ["Prenom" => "Carlos", "Nom" => "Alcaraz", "Nationalite" => "Espagnol", "Points" => 8560],

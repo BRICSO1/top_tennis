@@ -9,7 +9,7 @@
 
 <body>
     <h2>Se connecter</h2>
-    <form action="./auth/connexion_account.php" method="post">
+    <form action="./connexion_account.php" method="post">
         <label for="username">Nom d'utilisateur :</label>
         <input type="text" id="username" name="username" required>
         <br>

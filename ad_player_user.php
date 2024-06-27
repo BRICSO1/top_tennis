@@ -1,5 +1,5 @@
 <?php
-include("./auth/protect.php");
+include("./protect.php");
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -13,7 +13,7 @@ include("./auth/protect.php");
 
 <body>
     <h2>Ajouter un joueur de tennis</h2>
-    <form action="./post/save_player.php" method="post">
+    <form action="./save_player.php" method="post">
         <label for="first_name">Prénom :</label>
         <input type="text" id="first_name" name="first_name" required><br><br>
 
@@ -30,7 +30,7 @@ include("./auth/protect.php");
         <input type="submit" value="Ajouter le joueur">
     </form>
     <a href="./top.php">Retour au menu principal</a>
-    <a href="./auth/deco.php">Se déconnecter</a>
+    <a href="./deco.php">Se déconnecter</a>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <footer>
         <p>Mes résaux :</p><a href="https://github.com/BRICSO1">Github</a> <a href="https://discord.com/channels/1207714141889106051/1207714142337761363">Discord</a>
