@@ -1,18 +1,5 @@
 <?php
-// Informations de connexion à la base de données
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "tennis_website";
-
-// Créer une connexion
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Vérifier la connexion
-if ($conn->connect_error) {
-    die("La connexion a échoué : " . $conn->connect_error);
-}
-
+include("./connexion.php");
 // Récupérer les données du formulaire
 $first_name = $_POST['first_name'];
 $last_name = $_POST['last_name'];
