@@ -69,7 +69,7 @@ CREATE TABLE `users` (
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `email`, `created_at`) VALUES
+-- INSERT INTO `users` (`id`, `username`, `password`, `email`, `created_at`) VALUES
 
 --
 -- Index pour les tables déchargées

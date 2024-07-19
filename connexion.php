@@ -1,7 +1,7 @@
 <?php
 // Paramètres de configuration
 $charset = 'utf8mb4';
-$host = 'localhost'; // Adresse du serveur MySQL
+$host = 'db'; // Adresse du serveur MySQL
 $dbname = 'tennis_website'; // Nom de la base de données
 $username = 'root'; // Nom d'utilisateur MySQL
 $password = ''; // Mot de passe MySQL
@@ -16,14 +16,8 @@ $options = [
     PDO::ATTR_EMULATE_PREPARES   => false,
 ];
 
-try {
-    // Créer une nouvelle instance de PDO
-    $pdo = new PDO($dsn, $username, $password, $options);
-    // echo "Connexion réussie !";
-} catch (PDOException $e) {
-    // Gérer les erreurs de connexion
-    // echo "Erreur de connexion : " . $e->getMessage();
-}
+// Créer une nouvelle instance de PDO
+$pdo = new PDO($dsn, $username, $password, $options);
 $requete = "SELECT * FROM players_of_tennis";
 $statement = $pdo->prepare($requete);
 $statement->execute();
