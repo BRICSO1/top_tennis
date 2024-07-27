@@ -1,5 +1,5 @@
 <?php
-include("./connexion.php");
+include(__DIR__ . '/../config/database.config.php');
 
 // Récupérer les données du formulaire et les sécuriser
 $first_name = htmlspecialchars($_POST['first_name']);

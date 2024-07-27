@@ -1,7 +1,7 @@
 <?php
 session_start();
 // var_dump($_POST);
-include("connexion.php");
+include(__DIR__ . '/../config/database.config.php');
 
 $username = $_POST['username'];
 $password = $_POST['password'];

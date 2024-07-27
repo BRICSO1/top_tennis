@@ -1,22 +1,22 @@
 <?php
+error_reporting(E_ALL);
+require(__DIR__ . '/functionalities/database_functions.php');
 $title = "Voici le top 10 mondial au tennis";
+$players=players();
 $favoriteplayer = array("Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Cubenapé", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Soulivaneuh", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Jimmy Novaaaa", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov");
 $aleatoire = array_rand($favoriteplayer);
 $aleatoire2 = $favoriteplayer[$aleatoire];
 
-
-include("connexion.php");
-include("ConnexionOrNot.php");
-
-
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-    <title><?php echo $title; ?></title>
-    <link href="./top.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= $title; ?></title>
+    <link href="/assets/css/top.css" rel="stylesheet">
 </head>
 
 <body>
@@ -48,7 +48,7 @@ include("ConnexionOrNot.php");
         </p>
         <button type="submit" name="submit">Envoyer</button>
     </form>
-   
+
     <footer class="page-footer">
         <p>Mes résaux :</p><a href="https://github.com/BRICSO1">Github</a> <a href="https://discord.com/channels/1207714141889106051/1207714142337761363">Discord</a>
     </footer>
