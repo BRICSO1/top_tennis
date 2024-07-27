@@ -24,7 +24,9 @@ $players = [
     ["Prenom" => "Grigor", "Nom" => "Dimitrov", "Nationalite" => "Bulgarie", "Points" => 3775]
 ];
 
-$requete = "INSERT INTO `players_of_tennis` (`id`, `firstname`, `lastname`, `points`, `nationality`) VALUES (NULL, ?, ?, ?, ?)";
+$requete = "INSERT INTO `players_of_tennis` (`id`, `firstname`, `lastname`, `points`, `nationality`) VALUES (NULL, ?, ?, ?, ?) and ALTER TABLE `players_of_tennis`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+";
 $statement = $pdo->prepare($requete);
 
 // Parcours du tableau et insertion des données

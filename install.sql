@@ -26,6 +26,7 @@ SET time_zone = "+00:00";
 --
 -- Structure de la table `users`
 --
+DROP TABLE `users` if table exist 
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
@@ -35,15 +36,6 @@ CREATE TABLE `users` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Déchargement des données de la table `users`
---
-
-INSERT INTO `users` (`id`, `username`, `password`, `email`, `created_at`) VALUES
-
---
--- Index pour les tables déchargées
---
 
 --
 -- Index pour la table `players_of_tennis`
@@ -58,16 +50,6 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `username` (`username`),
   ADD UNIQUE KEY `email` (`email`);
-
---
--- AUTO_INCREMENT pour les tables déchargées
---
-
---
--- AUTO_INCREMENT pour la table `players_of_tennis`
---
-ALTER TABLE `players_of_tennis`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT pour la table `users`

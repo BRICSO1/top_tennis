@@ -19,9 +19,9 @@
         <button type="submit">Se connecter</button>
     </form>
     <a href="./register.php">Vous n'avez pas de compte ? Créez en un ici !</a><br>
-    <a href="./top.php">Retour au menu principal</a>
+    <a href="./index.php">Retour au menu principal</a>
    
-    <footer>
+    <footer class="page-footer">
         <p>Mes résaux :</p><a href="https://github.com/BRICSO1">Github</a> <a href="https://discord.com/channels/1207714141889106051/1207714142337761363">Discord</a>
     </footer>
 </body>

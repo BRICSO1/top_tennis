@@ -6,7 +6,7 @@ $aleatoire2 = $favoriteplayer[$aleatoire];
 
 
 include("connexion.php");
-
+include("ConnexionOrNot.php");
 
 
 ?>
@@ -21,7 +21,6 @@ include("connexion.php");
 
 <body>
     <div class="lien">
-    <?php include("./conectie.php")?>
     </div>
     <table cellpadding="5" cellspacing="5">
         <tr>
@@ -50,7 +49,7 @@ include("connexion.php");
         <button type="submit" name="submit">Envoyer</button>
     </form>
    
-    <footer>
+    <footer class="page-footer">
         <p>Mes résaux :</p><a href="https://github.com/BRICSO1">Github</a> <a href="https://discord.com/channels/1207714141889106051/1207714142337761363">Discord</a>
     </footer>
 </body>

@@ -1,9 +1,9 @@
 <?php
 session_start();
-include("./connexion.php");
+include("connexion.php");
 // var_dump($_SESSION);
 if (!empty($_SESSION['username'])) {
-    echo ("bienvenue arthur !<br>");
+    echo ("bienvenue {$_SESSION['username']} !<br>");
 } else {
     die('
     <!DOCTYPE>

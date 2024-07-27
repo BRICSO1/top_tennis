@@ -1,7 +1,7 @@
 <?php
 session_start();
 // var_dump($_POST);
-include("./connexion.php");
+include("connexion.php");
 
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -30,7 +30,7 @@ if ($user && password_verify($password, $user['password'])) {
 <body>
   <p>
   </p>
-  <a href="./top.php">Retour au menu principal</a>
+  <a href="./index.php">Retour au menu principal</a>
   <a href="./login.php">Réessayer</a>
 </body>
 

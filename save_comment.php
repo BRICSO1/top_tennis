@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
         echo "<p>Erreur lors de l'ajout du commentaire.</p>";
     }
 } else {
-    header('Location: top.php');
+    header('Location: ./index.php');
     exit();
 }
 ?>

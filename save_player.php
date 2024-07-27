@@ -33,7 +33,7 @@ $sql->bind_param("sssi", $first_name, $last_name, $country, $points);
         $sql->close();
         $conn->close();
         ?>
-        <a href="./top.php">Retour au menu principal</a>
+        <a href="./index.php">Retour au menu principal</a>
     </div>
 </body>
 </html>
