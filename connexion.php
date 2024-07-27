@@ -15,15 +15,7 @@ $options = [
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     PDO::ATTR_EMULATE_PREPARES   => false,
 ];
-
-try {
-    // Créer une nouvelle instance de PDO
-    $pdo = new PDO($dsn, $username, $password, $options);
-    // echo "Connexion réussie !";
-} catch (PDOException $e) {
-    // Gérer les erreurs de connexion
-    // echo "Erreur de connexion : " . $e->getMessage();
-}
+$pdo = new PDO($dsn, $username, $password, $options);
 $requete = "SELECT * FROM players_of_tennis";
 $statement = $pdo->prepare($requete);
 $statement->execute();

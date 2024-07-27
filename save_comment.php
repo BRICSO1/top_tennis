@@ -28,6 +28,6 @@ if (isset($_POST['submit'])) {
     <title>Document</title>
 </head>
 <body>
-<a href="./top.php">Retour à l'accueil</a>
+<a href="./index.php">Retour à l'accueil</a>
 </body>
 </html>
