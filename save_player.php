@@ -1,5 +1,5 @@
 <?php
-include(__DIR__ . '/../config/database.config.php');
+include(__DIR__ . '/../functionlities/database_functions.php');
 
 // Récupérer les données du formulaire et les sécuriser
 $first_name = htmlspecialchars($_POST['first_name']);
@@ -19,7 +19,7 @@ $sql->bind_param("sssi", $first_name, $last_name, $country, $points);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votre joueur a bien été inséré</title>
-    <link href="./top.css" rel="stylesheet">
+    <link href="/assets/css/top.css" rel="stylesheet">
 </head>
 <body>
 <br><br><br><br>

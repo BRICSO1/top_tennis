@@ -1,5 +1,5 @@
 <?php
-include("./protect.php");
+include("/protect.php");
 
 if (isset($_POST['submit'])) {
     // Récupération du commentaire
@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
         echo "<p>Erreur lors de l'ajout du commentaire.</p>";
     }
 } else {
-    header('Location: ./index.php');
+    header('Location: /index.php');
     exit();
 }
 ?>
@@ -28,6 +28,6 @@ if (isset($_POST['submit'])) {
     <title>Document</title>
 </head>
 <body>
-<a href="./index.php">Retour à l'accueil</a>
+<a href="/index.php">Retour à l'accueil</a>
 </body>
 </html>

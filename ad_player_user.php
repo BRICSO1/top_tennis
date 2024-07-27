@@ -8,7 +8,7 @@ include("./protect.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajouter un joueur de tennis</title>
-    <link href="./top.css" rel="stylesheet">
+    <link href="/top.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,8 +29,8 @@ include("./protect.php");
 
         <input type="submit" value="Ajouter le joueur">
     </form>
-    <a href="./top.php">Retour au menu principal</a>
-    <a href="./deco.php">Se déconnecter</a>
+    <a href="/index.php">Retour au menu principal</a>
+    <a href="/deco.php">Se déconnecter</a>
   
     <footer class="page-footer">
         <p>Mes résaux :</p><a href="https://github.com/BRICSO1">Github</a> <a href="https://discord.com/channels/1207714141889106051/1207714142337761363">Discord</a>

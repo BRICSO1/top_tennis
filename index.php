@@ -3,10 +3,8 @@ error_reporting(E_ALL);
 require(__DIR__ . '/functionalities/database_functions.php');
 $title = "Voici le top 10 mondial au tennis";
 $players=players();
-$favoriteplayer = array("Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Cubenapé", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Soulivaneuh", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Jimmy Novaaaa", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov", "Jannik Sinner", "Carlos Alcaraz", "Novak Djokovic", "Alexender Zverev", "Daniil Medvedev", "Andrey Rublev", "Casper Ruud", "Hubert Hurkacz", "Alex De Minaur", "Grigor Dimitrov");
-$aleatoire = array_rand($favoriteplayer);
-$aleatoire2 = $favoriteplayer[$aleatoire];
-
+$aleatoire_number = array_rand($players); $aleatoire_player = $players[$aleatoire_number];
+$topten=topten();
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +20,7 @@ $aleatoire2 = $favoriteplayer[$aleatoire];
 <body>
     <div class="lien">
     </div>
+    <h1><?= $title;?></h1>
     <table cellpadding="5" cellspacing="5">
         <tr>
             <td>Prenom</td>
@@ -29,7 +28,7 @@ $aleatoire2 = $favoriteplayer[$aleatoire];
             <td>Nationalite</td>
             <td>Points</td>
         </tr>
-        <?php foreach ($players as $player) : ?>
+        <?php foreach ($topten as $player) : ?>
             <tr>
                 <td><?php echo $player["firstname"]; ?></td>
                 <td><?php echo $player["lastname"]; ?></td>
@@ -38,10 +37,10 @@ $aleatoire2 = $favoriteplayer[$aleatoire];
             </tr>
         <?php endforeach; ?>
     </table>
-    <p>Mon joueur favori est : <?php echo $aleatoire2 ?><br><br> Vous pensez qu'il manque un joueur ?</p>
-    <a href="./ad_player_user.php"> Ajoutez-le !</a>
+    <p>Mon joueur favori est : <?= $aleatoire_player['firstname']; ?> <?= $aleatoire_player['lastname'] ?><br><br> Vous pensez qu'il manque un joueur ?</p>
+    <a href="/ad_player_user.php"> Ajoutez-le !</a>
     <!-- Formulaire pour enregistrer un commentaire -->
-    <form action="./save_comment.php" method="post">
+    <form action="/save_comment.php" method="post">
         <p>
             <label for="commentaire">Votre commentaire :</label>
             <input type="text" name="commentaire" id="commentaire" placeholder="Ex. : Ce site est superbe" size="50" maxlength="100" required>

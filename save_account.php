@@ -1,5 +1,5 @@
 <?php
-include("./connexion.php");
+include("functionalities/database_functions.php");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
@@ -24,11 +24,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->execute(['username' => $username, 'email' => $email, 'password' => $password]);
             echo 'Inscription réussie !';
         } catch (PDOException $e) {
-            echo 'Erreur : ' . $e->getMessage() ?> <a href="./register.php">réesayer</a><?php
+            echo 'Erreur : ' . $e->getMessage() ?> <a href="/register.php">réesayer</a><?php
         }
 }
 ?>
-    <a href="./index.php">retour au menu princpal</a>
+    <a href="/index.php">retour au menu princpal</a>
     </body>
 
     </html>
