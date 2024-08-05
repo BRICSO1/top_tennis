@@ -14,6 +14,6 @@ function topten(){
     $stmt->execute();
     return $stmt->fetchAll();
 }
-function insert_player_update(){
-    "INSERT "
-}
+// function insert_player_update(){
+//     "INSERT "
+// }
