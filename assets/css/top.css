@@ -21,15 +21,10 @@ html{
     font:600 small-caps;
     font-size:large;
 }
-@media all and (min-width: 200px) and (max-width: 1000px) {
-    body,head,table, p {
-        stop-color: aqua;
-        font-family: Arial, Helvetica, serif;
-    }
-}
+
 footer{
-    position:sticky;
-    bottom:0;
+    position: sticky;
+    bottom: 0;
 }
 html, body {
     box-sizing: border-box;

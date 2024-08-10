@@ -1,6 +1,8 @@
 <?php
 error_reporting(E_ALL);
 require(__DIR__ . '/functionalities/database_functions.php');
+require(__DIR__ . '/ConnexionOrNot.php');
+
 $title = "Voici le top 10 mondial au tennis";
 $players=players();
 $aleatoire_number = array_rand($players); $aleatoire_player = $players[$aleatoire_number];
@@ -14,7 +16,7 @@ $topten=topten();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title; ?></title>
-    <link href="./assets/css/top.css" rel="stylesheet">
+    <link href="/assets/css/top.css" rel="stylesheet">
 </head>
 
 <body>

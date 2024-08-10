@@ -1,12 +1,12 @@
 <?php
 session_start();
 // var_dump($_POST);
-include(__DIR__ . '/../config/database.config.php');
+include(__DIR__ . '/functionalities/database_functions.php');
 
 $username = $_POST['username'];
 $password = $_POST['password'];
 $sql_username = "SELECT * FROM `users` WHERE username = ?";
-$stmt = $pdo->prepare($sql_username);
+$stmt = db()->prepare($sql_username);
 $stmt->execute([$username]);
 
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
