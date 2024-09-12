@@ -1,5 +1,5 @@
-Cette page est un test d'apprentissage pour un stage fait en deux semaine.
+This page is a learning website for a two-week internship.
 
-créez une base de donné puis insérer le dans la base de donnée 
-ATTENTION mettez vos mots de passe et nom d'utilistateur de votre phpmyadmin dans connexion.php
-utiler xammp ou wammp pour faire tourner le site pour un localhost ou un virtualhost avec cette commande `php -S localhost:8000`
+Create a database and then insert it into the database the file install.sql
+WARNING: put your passwords and username of your phpmyadmin in connexion.php
+Use xammp or wammp to run the site for a localhost or virtualhost with this command 'php -S localhost:8000'
